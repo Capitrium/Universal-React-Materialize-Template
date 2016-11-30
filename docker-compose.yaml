@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  node:
+    build:
+      context: ./
+    command: ["npm", "run", "start"]
+    environment:
+      - PORT=3700
+      - NODE_ENV=production
+    ports:
+      - "3700:3700"
+    volumes:
+      - .:/srv
+      - /srv/node_modules

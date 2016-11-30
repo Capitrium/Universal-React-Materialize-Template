@@ -1,0 +1,18 @@
+// Control the site theme from here; the full list of variables can be found in
+// node_modules/materialize-css/sass/components/_variables.scss
+$primary-color: color("teal", "base");
+$primary-color-light: lighten($primary-color, 15%);
+$primary-color-dark: darken($primary-color, 15%);
+
+$secondary-color: color("brown", "darken-2");
+$secondary-color-light: lighten($secondary-color, 15%);
+$secondary-color-dark: darken($secondary-color, 15%);
+
+/* Avoid having to set "$color"-text classes on icons */
+i {
+  color: $secondary-color;
+}
+
+nav i {
+  color: $primary-color;
+}
