@@ -25,11 +25,24 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
+
+.parallax-container .section {
+  width: 100%;
+}
+
+@media only screen and (min-width : 993px) {
+  .nav-wrapper {
+    width: 70%;
   }
+  .icon-block .material-icons {
+    font-size: 48px;
+  }
+}
 
 @media only screen and (max-width : 992px) {
+  .nav-wrapper {
+    width: 85%;
+  }
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -37,23 +50,32 @@ p {
   #index-banner .section {
     top: 10%;
   }
+  .icon-block .material-icons {
+    font-size: 36px;
+  }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
   }
+  .icon-block .material-icons {
+    font-size: 24px;
+  }
 }
 
 .icon-block {
   padding: 0 15px;
 }
-.icon-block .material-icons {
-  font-size: inherit;
-}
 
 footer.page-footer {
   margin: 0;
+}
+
+.nav-wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
 }
 
 .parallax-placeholder {

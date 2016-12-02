@@ -26,7 +26,6 @@ const siteConfig = {
         materialize: [
             'materialize-loader!./src/config/materialize.config.js',
             'materialize-css',
-            'styles/materialize-style.css',
             'styles/style.css',
         ],
         icons: [

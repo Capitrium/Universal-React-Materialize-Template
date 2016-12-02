@@ -18,7 +18,6 @@ const serverConfig = {
     entry: {
         app: [
             'materialize-loader!./src/config/materialize.config.js',
-            'styles/materialize-style.css',
             'styles/style.css',
             'webpack-material-design-icons',
             'application/server.tsx'
